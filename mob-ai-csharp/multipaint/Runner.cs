@@ -19,7 +19,7 @@ namespace mob_ai_csharp.multipaint
             {
                 var msg = JsonConvert.DeserializeObject<Board>(Console.ReadLine());
 
-                var move = bot.NexMove(msg);
+                var move = bot.NextMove(msg);
 
                 // Anonymous type to adjust with provided API
                 var action = new

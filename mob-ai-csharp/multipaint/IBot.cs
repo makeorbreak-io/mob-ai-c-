@@ -10,6 +10,6 @@ namespace mob_ai_csharp.multipaint
     {
         void SetPlayerId(string playerId);
 
-        Move NexMove(Board boardState);
+        Move NextMove(Board boardState);
     }
 }

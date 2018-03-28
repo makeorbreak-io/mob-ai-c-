@@ -34,7 +34,7 @@ namespace mob_ai_csharp
             this.R = new Random();
         }
 
-        public Move NexMove(Board boardState)
+        public Move NextMove(Board boardState)
         {
             Move move = new Move();
 
