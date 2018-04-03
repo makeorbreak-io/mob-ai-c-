@@ -10,14 +10,14 @@ namespace mob_ai_csharp
 
         public List<List<int>> ActionDirections = new List<List<int>>()
         {
-            new List<int>{-1, -1}, // NorthWest
-            new List<int>{ 0, -1}, // North
-            new List<int>{ 1, -1}, // Northeast
-            new List<int>{-1,  0}, // West
-            new List<int>{ 1,  0}, // East
-            new List<int>{ 1,  1}, // Southwest
-            new List<int>{ 0,  1}, // South
-            new List<int>{ 1,  1}, // Southeast
+            new List<int>{-1, -1},
+            new List<int>{ 0, -1},
+            new List<int>{ 1, -1},
+            new List<int>{-1,  0},
+            new List<int>{ 1,  0},
+            new List<int>{ 1,  1},
+            new List<int>{ 0,  1},
+            new List<int>{ 1,  1},
         };
 
         private string PlayerId;

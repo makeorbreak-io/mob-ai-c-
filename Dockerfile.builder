@@ -1,15 +1,11 @@
 FROM mob-ai-csharp:latest
 
 RUN mkdir /robot/
-ADD mob-ai-csharp/multipaint /robot/mob-ai-csharp/multipaint
-ADD mob-ai-csharp/ /robot/mob-ai-csharp/
-ADD mob-ai-csharp/lib/*.dll /robot/lib/
-ADD mob-ai-csharp.sln /robot/
+ADD mob-ai-csharp.csproj /robot/
+ADD multipaint /robot/multipaint
+ADD Bot.cs /robot/Bot.cs
 
 WORKDIR /robot/
-RUN dotnet build mob-ai-csharp.sln
-RUN cd /robot/mob-ai-csharp/
+RUN dotnet build --configuration Release
 
-WORKDIR /robot/mob-ai-csharp/
-
-ENTRYPOINT dotnet run
+ENTRYPOINT ["dotnet", "bin/Release/netcoreapp2.0/Bot.dll"]

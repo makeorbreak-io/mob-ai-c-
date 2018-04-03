@@ -16,7 +16,7 @@ namespace mob_ai_csharp.multipaint
 
         public List<List<string>> colors { get; set; }
 
-        public Dictionary<string, Move> previous_actions { get; set; }
+        public List<Dictionary<string, Move>> previous_actions { get; set; }
 
         public Dictionary<string, List<int>> player_positions { get; set; }
     }

@@ -1,1 +1,9 @@
 FROM microsoft/dotnet
+
+RUN mkdir warmup \
+  && cd warmup \
+  && dotnet new console \
+  && dotnet add warmup.csproj package NewtonSoft.Json -v 11.0.2 \
+  && dotnet restore \
+  && cd .. \
+  && rm -rf warmup
