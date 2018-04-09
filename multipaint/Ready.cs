@@ -8,6 +8,6 @@ namespace mob_ai_csharp.multipaint
 {
     public class Ready
     {
-        public string PlayerId { get; set; }
+        public string player_id { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace mob_ai_csharp.multipaint
     {
         public static void Run(IBot bot)
         {
-            bot.SetPlayerId(JsonConvert.DeserializeObject<Ready>(Console.ReadLine()).PlayerId);
+            bot.SetPlayerId(JsonConvert.DeserializeObject<Ready>(Console.ReadLine()).player_id);
 
             Console.WriteLine("{\"ready\":true}");
 
